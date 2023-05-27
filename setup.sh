@@ -43,42 +43,36 @@ clear
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf 
 #install cf
-wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/install/cf.sh && chmod +x cf.sh && ./cf.sh
-rm -f /root/cf.sh
-clear
-echo ""
-clear
-echo -e "\e[0;32mREADY FOR INSTALLATION SCRIPT...\e[0m"
-sleep 2
+wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 echo -e "\e[0;32mINSTALLING SSH & OVPN...\e[0m"
 sleep 1
-wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 echo -e "\e[0;32mDONE INSTALLING SSH & OVPN\e[0m"
 clear
 #install Xray
 echo -e "\e[0;32mINSTALLING XRAY CORE...\e[0m"
 sleep 1
-wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/install/ins-xray.sh && chmod +x ins-xray.sh && screen -S ins-xray ./ins-xray.sh
+wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/ins-xray.sh && chmod +x ins-xray.sh && screen -S ins-xray ./ins-xray.sh
 echo -e "\e[0;32mDONE INSTALLING XRAY CORE\e[0m"
 clear
 #install ohp-server
 echo -e "\e[0;32mINSTALLING OHP PORT...\e[0m"
 sleep 1
-wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/install/ohp.sh && chmod +x ohp.sh && ./ohp.sh
-wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/install/ohp-dropbear.sh && chmod +x ohp-dropbear.sh && ./ohp-dropbear.sh
-wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/install/ohp-ssh.sh && chmod +x ohp-ssh.sh && ./ohp-ssh.sh
+wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/ohp-dropbear.sh && chmod +x ohp-dropbear.sh && ./ohp-dropbear.sh
+wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/ohp-ssh.sh && chmod +x ohp-ssh.sh && ./ohp-ssh.sh
 echo -e "\e[0;32mDONE INSTALLING OHP PORT\e[0m"
 clear
 #install websocket
 echo -e "\e[0;32mINSTALLING WEBSOCKET PORT...\e[0m"
-wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
+wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
 echo -e "\e[0;32mDONE INSTALLING WEBSOCKET PORT\e[0m"
 clear
 #install SET-BR
 echo -e "\e[0;32mINSTALLING SET-BR...\e[0m"
 sleep 1
-wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/install/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 echo -e "\e[0;32mDONE INSTALLING SET-BR...\e[0m"
 clear
 # set time GMT +8
@@ -111,10 +105,6 @@ echo "1;33m" > /etc/below
 echo "47m" > /etc/back
 echo "1;35m" > /etc/number
 echo 3d > /usr/bin/test
-# Version
-ver=$( curl https://raw.githubusercontent.com/muhammadnoor674/version/main/version.conf )
-history -c
-echo "$ver" > /home/ver
 clear
 echo " "
 echo "Installation has been completed!!"
