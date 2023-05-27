@@ -8,11 +8,11 @@ make install
 cd
 rm -rf wondershaper
 cd /usr/bin
-wget -O autobackup "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/backupBot.sh"
-wget -O backup "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/backup.sh"
-wget -O bckp "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/bckp.sh"
-wget -O restore "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/strt.sh"
+wget -O autobackup "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/backupBot.sh"
+wget -O backup "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/backup.sh"
+wget -O bckp "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/bckp.sh"
+wget -O restore "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/strt.sh"
 wget -O limit-speed "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/limit-speed.sh"
 chmod +x autobackup
 chmod +x backup

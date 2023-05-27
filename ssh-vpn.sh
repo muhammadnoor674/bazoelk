@@ -232,15 +232,15 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # // banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/banner/bannerssh.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 # // Bannerku menu
-wget -O /usr/bin/bannerku https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/banner/bannerku && chmod +x /usr/bin/bannerku
+wget -O /usr/bin/bannerku https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/bannerku && chmod +x /usr/bin/bannerku
 
 # // install bbr
-wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # // blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -261,55 +261,55 @@ netfilter-persistent reload
 
 # // download script
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/add-host.sh"
-wget -O about "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/about.sh"
+wget -O add-host "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/about.sh"
 wget -O menu "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/menu.sh"
-wget -O add-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/add-user/add-ssh.sh"
-wget -O trial "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/add-user/trial.sh"
-wget -O del-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/delete-user/del-ssh.sh"
+wget -O add-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/add-ssh.sh"
+wget -O trial "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/trial.sh"
+wget -O del-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/del-ssh.sh"
 wget -O member "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/member.sh"
-wget -O delete "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/delete-user/delete.sh"
-wget -O cek-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cek-user/cek-ssh.sh"
-wget -O restart "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/info.sh"
-wget -O ram "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/ram.sh"
-wget -O renew-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/renew-user/renew-ssh.sh"
+wget -O delete "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/delete.sh"
+wget -O cek-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cek-ssh.sh"
+wget -O restart "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/restart.sh"
+wget -O speedtest "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/ram.sh"
+wget -O renew-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/renew-ssh.sh"
 wget -O autokill "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cek-user/ceklim.sh"
+wget -O ceklim "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/tendang.sh"
 wget -O clear-log "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/clear-log.sh"
 wget -O change-port "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/change-port/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/change-port/port-ssl.sh"
-wget -O port-squid "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/change-port/port-squid.sh"
-wget -O port-websocket "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/change-port/port-websocket.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/port-ssl.sh"
+wget -O port-squid "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/port-squid.sh"
+wget -O port-websocket "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/port-websocket.sh"
 wget -O wbmn "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/webmin.sh"
 wget -O xp "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/xp.sh"
 wget -O kernel-updt "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/kernel.sh"
-wget -O user-list "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/more-option/user-list.sh"
-wget -O user-lock "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/more-option/user-lock.sh"
-wget -O user-unlock "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/more-option/user-unlock.sh"
-wget -O user-password "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/more-option/user-password.sh"
-wget -O antitorrent "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/more-option/antitorrent.sh"
-wget -O cfa "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cloud/cfa.sh"
-wget -O cfd "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cloud/cfd.sh"
-wget -O cfp "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cloud/cfp.sh"
+wget -O user-list "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/user-list.sh"
+wget -O user-lock "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/user-lock.sh"
+wget -O user-unlock "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/user-unlock.sh"
+wget -O user-password "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/user-password.sh"
+wget -O antitorrent "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/antitorrent.sh"
+wget -O cfa "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cfa.sh"
+wget -O cfd "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cfd.sh"
+wget -O cfp "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/cfp.sh"
 wget -O swap "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/swapkvm.sh"
-wget -O check-sc "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/running.sh"
+wget -O check-sc "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/running.sh"
 wget -O ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/menu/ssh.sh"
-wget -O autoreboot "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/autoreboot.sh"
-wget -O bbr "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/bbr.sh"
-wget -O port-ohp "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/change-port/port-ohp.sh"
-wget -O port-xray "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/change-port/port-xray.sh"
-wget -O panel-domain "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/menu/panel-domain.sh"
-wget -O system "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/menu/system.sh"
-wget -O themes "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/menu/themes.sh"
-wget -O update "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/update/update.sh"
-wget -O run-update "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/update/run-update.sh"
-wget -O message-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/update/message-ssh.sh"
-wget -O dns "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/dns.sh"
-wget -O nf "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system/nf.sh"
+wget -O autoreboot "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/autoreboot.sh"
+wget -O bbr "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/bbr.sh"
+wget -O port-ohp "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/port-ohp.sh"
+wget -O port-xray "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/port-xray.sh"
+wget -O panel-domain "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/panel-domain.sh"
+wget -O system "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/system.sh"
+wget -O themes "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/themes.sh"
+wget -O update "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/update.sh"
+wget -O run-update "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/run-update.sh"
+wget -O message-ssh "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/message-ssh.sh"
+wget -O dns "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/dns.sh"
+wget -O nf "https://raw.githubusercontent.com/muhammadnoor674/bazoelk/main/nf.sh"
 chmod +x add-host
 chmod +x menu
 chmod +x add-ssh
