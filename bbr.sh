@@ -1,10 +1,3 @@
-#Optimasi Speed By NYARIGRATISAN
-#wget https://github.com/muhammadnoor674/
-#IZIN SCRIPT
-MYIP=$(curl -sS ipv4.icanhazip.com)
-echo -e "\e[32mloading...\e[0m"
-clear
-echo -e "\e[32mloading...\e[0m"
 clear
 Add_To_New_Line(){
 	if [ "$(tail -n1 $1 | wc -l)" == "0"  ];then
