@@ -70,11 +70,6 @@ echo -e "   \e[1;31m(Press ENTER for default email)\e[0m"
 read -p "   Email : " email
 default=${default_email}
 new_email=$email
-if [[ $email == "" ]]; then
-sts=$default_email
-else
-sts=$new_email
-fi
 # email
 mkdir -p /usr/local/etc/xray/
 touch /usr/local/etc/xray/email
